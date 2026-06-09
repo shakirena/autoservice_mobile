@@ -1,24 +1,34 @@
 {
   "expo": {
-    "name": "autoservice-mobile",
+    "name": "АвтоСервис",
     "slug": "autoservice-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "autoservice",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.autoservice.clientapp"
     },
     "android": {
+      "package": "com.autoservice.clientapp",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
+        "backgroundColor": "#1565C0",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": []
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [],
+    "extra": {
+      "eas": {
+        "projectId": "autoservice-mobile"
+      }
     }
   }
 }
